@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <title>Q2 Seatwork 1</title>
+    
+
+    <style>
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Rajdhani', sans-serif;
+            background-image: url("stars.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #8080ff;
+                    }
+
+        header {
+            width: 80%;
+            max-width: 800px;
+            margin: 35px auto 30px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: #443eb1;
+            border: 2px solid #8080ff;
+            border-radius: 15px;
+                }
+
+        header h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 36px;
+            font-weight: 800;
+            margin: 5px 0 12px;
+            color: #8080ff;
+                    }
+
+        header p {
+            font-size: 20px;
+            margin: 0 0 5px;
+                }
+
+        .reactor {
+            display: none;
+                }
+
+        main {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            box-sizing: border-box;
+            background-color: #FFFFFF;
+            border: 2px solid #8080ff;
+            border-radius: 15px;
+            box-shadow: 0 5px 12px rgba(54, 121, 174, 0.08);
+            text-align: center;
+                }
+
+        input[type="text"] {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 0 auto 22px;
+            box-sizing: border-box;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 17px;
+            color: #443eb1;
+            background-color: #F7FBFE;
+            border: 2px solid #8080ff;
+            border-radius: 9px;
+            outline: none;
+                            }
+
+        input[type="text"]:focus {
+            border-color: #443eb1;
+                                }
+
+        input[type="button"] {
+            padding: 14px 30px;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 17px;
+            font-weight: 600;
+            color: #8080ff;
+            background-color: #443eb1;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+            width: 100%;
+                            }
+
+        input[type="button"]:hover {
+            background-color: #8080ff;
+            color: #443eb1;
+                }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+                }
+
+        footer {
+            margin: 125px auto 20px;
+            padding: 0 15px;
+            text-align: center;
+            font-size: 17px;
+            text-shadow: #244D70;
+            width: 80%;
+            max-width: 800px;
+            margin: 35px auto 30px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: #443eb1;
+            border: 2px solid #8080ff;
+            border-radius: 15px;
+                }
+
+        footer span {
+            font-weight: 600;
+                }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <div class="reactor"></div>
+        <h1>COSMIC WRITERS' GUILD</h1>
+        <p>Candidate Verification System</p>
+    </header>
+
+    <main>
+        <form>
+            <input type="text" id="first_name" placeholder="Enter your first name..."> <br>
+            <input type="text" id="last_name" placeholder="Enter your last name..."> <br>
+            <input type="button" py-click="candidate_checker" value="Enter">
+        </form>
+        <div id="result"></div>
+    </main>
+    <footer>&copy; 2026 <span>COSMIC WRITERS' GUILD</span> &bull; Seatwork 1 &bull; 2nd Quarter</footer>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
